@@ -246,4 +246,29 @@ html, body {
     font-size: clamp(0.9rem, 3vw, 1.1rem);
     padding: 0 20px;
 }
+
+/* Desktop-specific content */
+.desktop-only {
+    display: none; /* Hidden by default */
+}
+
+/* Desktop Layout */
+@media (min-width: 769px) {
+    .desktop-only {
+        display: block; /* Show only on desktop */
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none !important; /* Ensure it's hidden on mobile */
+    }
+    
+    #message {
+        margin-top: 20vh; /* Adjust spacing for cleaner mobile layout */
+    }
+    
+    /* Rest of your mobile styles remain the same */
+}
   
