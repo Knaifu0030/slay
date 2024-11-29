@@ -87,6 +87,14 @@ html, body {
     #instructions {
         margin-top: 2vh;
     }
+
+    .desktop-instructions {
+        display: block;
+    }
+
+    .mobile-instructions {
+        display: none;
+    }
 }
 
 /* Mobile Layout */
@@ -197,6 +205,14 @@ html, body {
         padding: 15px 30px;
         font-size: 1.2rem;
     }
+
+    .desktop-instructions {
+        display: none;
+    }
+
+    .mobile-instructions {
+        display: block;
+    }
 }
 
 /* Common Styles */
@@ -220,5 +236,14 @@ html, body {
 
 #message, #winner {
     font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+/* Instructions styling */
+.desktop-instructions, .mobile-instructions {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    padding: 0 20px;
 }
   
