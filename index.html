@@ -9,15 +9,16 @@
 <body>
   <div id="game">
     <h1>Get Set Slay! 💅</h1>
+    
+    <!-- Device-specific instructions -->
     <div id="instructions">
-      <div class="desktop-instructions">
-        <p>Player 1: 💁‍♀️ Press <strong>A</strong> or tap the button</p>
-        <p>Player 2: 💁‍♀️ Press <strong>L</strong> or tap the button</p>
-      </div>
-      <div class="mobile-instructions">
-        <p>Tap the buttons to Slay!</p>
-      </div>
+        <!-- Desktop only -->
+        <div class="desktop-only">
+            <p>Player 1: 💁‍♀️ Press <strong>A</strong> or tap the button</p>
+            <p>Player 2: 💁‍♀️ Press <strong>L</strong> or tap the button</p>
+        </div>
     </div>
+
     <div id="message">Press Start to Slay</div>
     <div id="winner"></div>
 
@@ -25,13 +26,12 @@
     <div id="player1" class="character">💁‍♀️</div>
     <div id="player2" class="character">💁‍♀️</div>
 
-    <!-- Buttons for Mobile -->
+    <!-- Buttons -->
     <div id="buttons">
-      <button id="player1-btn">Slay! 💅</button>
-      <button id="player2-btn">Slay! 💅</button>
+        <button id="player1-btn">Slay! 💅</button>
+        <button id="player2-btn">Slay! 💅</button>
     </div>
 
-    <!-- Start Button -->
     <button id="start-btn">Start Game</button>
   </div>
 
