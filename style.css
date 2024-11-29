@@ -1,0 +1,133 @@
+/******** GLOBAL STYLING ********/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("./bg.png") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #ff0000;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+  
+#game {
+    position: relative;
+    height: 100vh;
+    color: white;
+}
+  
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+/******** CHARACTER STYLING ********/
+.character {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+/* Player 1 (Left side) */
+#player1 {
+    bottom: 30%;
+    left: 25%;
+}
+  
+/* Player 2 (Right side) */
+#player2 {
+    bottom: 30%;
+    right: 25%;
+}
+  
+/******** BUTTON STYLING ********/
+#buttons {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+  
+#player1-btn, #player2-btn {
+    width: 30%;
+    height: 60px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+#player1-btn:hover, #player2-btn:hover {
+    background-color: #e75480;
+    transform: scale(1.05);
+}
+  
+/******** START BUTTON ********/
+#start-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+  
+#start-btn:hover {
+    background-color: #ffc107;
+    transform: translateX(-50%) scale(1.05);
+}
+  
+/******** NAIL ANIMATION ********/
+.nail {
+    width: 50px;
+    height: 50px;
+    background: url('nail.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: none;
+}
+
+/* Add some styling for the instructions */
+#instructions {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+
+#message, #winner {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+  
